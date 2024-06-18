@@ -1,0 +1,143 @@
+.notif-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+}
+
+.notif-popup-content {
+    background: #033324;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    overflow-y: auto; /* Add scrollbar when content overflows vertically */
+    display: flex;
+    flex-direction: column;
+    z-index: 1051;
+}
+
+/* Custom scrollbar */
+.notif-popup-content::-webkit-scrollbar {
+    width: 8px; /* Width of vertical scrollbar */
+}
+
+.notif-popup-content::-webkit-scrollbar-track {
+    background: transparent; /* Track color */
+}
+
+.notif-popup-content::-webkit-scrollbar-thumb {
+    background: #4CAF50; /* Thumb color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+
+
+.notif-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.notif-popup-header h2 {
+    margin: 0;
+    color: white;
+}
+
+.notif-popup-header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.notif-popup-clear-all {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px; /* Add space between clear all and close button */
+}
+
+.notif-popup-clear-all:hover {
+    text-decoration: underline;
+}
+
+.notif-popup-close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    outline: none; /* Prevents black border from appearing */
+}
+
+.notif-popup-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notif-popup-notification-item {
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.notif-popup-notification-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.notif-popup-notification-message {
+    color: #555;
+}
+
+.notif-popup-close-notification {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000000;
+    outline: none; /* Prevents black border from appearing */
+}
+
+.notif-popup-close-notification:hover {
+    color: #d9534f;
+}
+
+/* Remove the outline for all buttons when focused */
+button:focus {
+    outline: none;
+}
+
+.notif-popup-no-notifications {
+    border-radius: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    color: black;
+    align-self: center;
+    font-size: 15px;
+}
+

@@ -1,0 +1,306 @@
+.moralmlogo {
+  margin-left: -5%;
+  max-width: 180px;
+  padding-bottom: 10px;
+  margin-top: -25px;
+  margin-bottom: 10%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #467e18;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav.open {
+  width: 25vh;
+  padding-left: 3%;
+}
+
+.sidenav a {
+  padding: 20px 20px 20px 50px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  position: relative;
+}
+
+.sidenav a.active {
+  background-color: #ffffff;
+  color: #467e18;
+  border-radius: 40px 0 0 40px;
+  padding-left: 45px;
+  margin-left: -5px;
+  position: relative;
+}
+
+.sidenav a.active::after {
+  content: '•';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #467e18;
+}
+
+.sidenav a:hover {
+  color: #9f9f9f;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.hamburger.active {
+  color: #ffffff;
+}
+
+.hamburger-box {
+  position: relative;
+}
+
+.hamburger-box .hamburger {
+  position: absolute;
+}
+
+.closebtn {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  background: none;
+  border: none;
+}
+
+.closebtn:hover {
+  color: #9f9f9f;
+}
+
+.hamburger-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-container:hover {
+  background-color: #9f9f9f;
+}
+
+.sidenav::-webkit-scrollbar {
+  display: none;
+}
+
+.top-right-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-container:hover {
+  background-color: #9f9f9f;
+}
+
+.icon-container-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Adjust the space between icons */
+}
+
+.icon {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.arrow {
+  transform: translateX(5px); /* Adjust the arrow position to look visually aligned */
+}
+
+.content-container {
+  margin-left: 16%;
+  margin-right: 1%;
+  margin-top: 20px; /* Adjust as needed to control the space below the icons */
+}
+
+.content-container h2 {
+  margin-top: 125px; /* Adjust margin as needed */
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.ProcessTitle{
+  font-size: 40px;
+}
+
+.batch-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.batch-container {
+  border: 1px solid #033324;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.batch-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.time-ellipsis {
+  display: flex;
+  align-items: center;
+}
+
+.ellipsis {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+.batch-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Remove hover effect for dropdown */
+/*.batch-dropdown:hover .dropdown-content {
+  display: block;
+}*/
+
+.batch-dropdown.active .dropdown-content {
+  display: block;
+}
+
+
+.process-step:hover {
+  background-color: #9f9f9f;
+}
+
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.process-step {
+  background-color: #EFEFEF;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative; /* Add position relative */
+}
+
+.process-step.completed{
+  background-color: #033324;
+}
+
+.process-step .step-number {
+  font-size: 16px;
+  font-weight: bold;
+  color: black; /* Default color for the number */
+}
+
+.process-step.completed .step-number {
+  color: white; /* Color for completed step number */
+}
+
+.process-step .step-text {
+  font-size: 12px;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -30px;
+  text-align: center;
+  color: black; /* Default color for the text */
+}
+
+.process-step:hover {
+  background-color: #9f9f9f;
+}
